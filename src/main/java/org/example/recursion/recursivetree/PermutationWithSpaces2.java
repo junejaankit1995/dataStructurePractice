@@ -7,7 +7,7 @@ import static java.lang.System.out;
 public class PermutationWithSpaces2 {
 
 
-    public void solve(String output, String input) {
+    private void solve(String output, String input) {
          /*
         Base Condition
                             O/P I/P
@@ -40,10 +40,11 @@ public class PermutationWithSpaces2 {
 
     }
 
-
-    public static void main(String[] args) {
-        String input = "ABC";
-        PermutationWithSpaces2 obj = new PermutationWithSpaces2();
+    public void permutationWithSpace(String input) {
+        if(input.length() <= 1) {
+            System.out.println("Given input String must contain length > 1 .");
+            return;
+        }
         /*
         Intialization
         "" "ABC"
@@ -51,7 +52,14 @@ public class PermutationWithSpaces2 {
           O/P I/P
         "A"  "BC"
         */
-        obj.solve(""+input.charAt(0), input.substring(1));
+        solve("" + input.charAt(0), input.substring(1));
+    }
+
+
+    public static void main(String[] args) {
+        String input = "ABCD";
+        PermutationWithSpaces2 obj = new PermutationWithSpaces2();
+        obj.permutationWithSpace(input);
         //obj.permutation("ABC");
     }
 
