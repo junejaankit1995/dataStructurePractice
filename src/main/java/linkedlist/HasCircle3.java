@@ -1,13 +1,12 @@
 package linkedlist;
 
+//https://practice.geeksforgeeks.org/problems/circular-linked-list/1
 public class HasCircle3 {
 
-    class Node
-    {
+    class Node {
         int data;
         Node next;
-        Node(int d)
-        {
+        Node(int d) {
             data = d;
             next = null;
         }
