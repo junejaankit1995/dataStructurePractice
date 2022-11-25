@@ -1,17 +1,19 @@
 package linkedlist;
 
 //https://leetcode.com/problems/linked-list-cycle-ii/
-class ListNode {
-    int val;
-    ListNode next;
+public class StartNodeOfLoop4 {
 
-    ListNode(int x) {
-        val = x;
-        next = null;
+    class ListNode {
+        int val;
+        ListNode next;
+
+        ListNode(int x) {
+            val = x;
+            next = null;
+        }
     }
-}
 
-public class StartNodeOfLoop {
+
     public ListNode detectCycle(ListNode head) {
         ListNode result = null, fast = head, slow;
         int nth = 2;
