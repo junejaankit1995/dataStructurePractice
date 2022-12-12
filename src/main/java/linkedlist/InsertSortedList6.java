@@ -1,7 +1,7 @@
 package linkedlist;
 
 //https://practice.geeksforgeeks.org/problems/insert-in-a-sorted-list/1
-public class InsertSortedList {
+public class InsertSortedList6 {
 
     class Node {
         int data;
